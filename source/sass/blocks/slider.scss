@@ -1,0 +1,41 @@
+.content__calc-slider {
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  border: none;
+  background-color: inherit;
+  svg {
+    width: 1vw;
+    height: 2vw;
+  }
+}
+
+.slider {
+  max-width: 10vw;
+  overflow: hidden;
+}
+
+.slider-line {
+  width: 10vw;
+  display: flex;
+  position: relative;
+  left: 0;
+  transition: all ease 1s;
+}
+
+@media screen and (max-width: 992px) {
+  .slider {
+    max-width: 100%;
+    overflow: hidden;
+  }
+
+  .slider-line {
+    width: 100%;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+  }
+}
